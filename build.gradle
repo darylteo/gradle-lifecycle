@@ -1,0 +1,19 @@
+println "[$project][build.gradle] Start"
+
+subprojects {
+	println "[$rootProject][build.gradle][subprojects] Start"	
+
+	println project
+
+	project.beforeEvaluate {
+		println "[$rootProject][build.gradle][subprojects] BeforeEvaluate"
+	}
+
+	project.afterEvaluate {
+		println "[$rootProject][build.gradle][subprojects] AfterEvaluate"
+	}
+
+	println "[$rootProject][build.gradle][subprojects] End"	
+}
+
+println "[$project][build.gradle] End"

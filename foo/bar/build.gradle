@@ -1,0 +1,3 @@
+println "[$project][build.gradle] Start"
+
+println "[$project][build.gradle] End"

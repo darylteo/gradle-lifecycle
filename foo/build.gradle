@@ -1,0 +1,5 @@
+println "[$project][build.gradle] Start"
+
+evaluationDependsOn('bar')
+
+println "[$project][build.gradle] End"
